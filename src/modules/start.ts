@@ -7,7 +7,7 @@ const composer = new Composer<MyContext>();
 
 composer
   .command("start", async (ctx) => {
-    if (ctx.chat.type != "private" && ctx.match == "by_BotzHub") {
+    if (ctx.chat.type != "private" && ctx.match == "by_Gamechangertips") {
       await ctx.reply("Continue setting me up in PM!", {
         reply_markup: new InlineKeyboard().url(
           "Continue",
@@ -22,7 +22,7 @@ composer
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
         .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .url(ctx.t("updates"), "https://t.me/+PlNN48MftZhmMjU9"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from!.id);
@@ -36,7 +36,7 @@ composer.callbackQuery("mainMenu", async (ctx) => {
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
         .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .url(ctx.t("updates"), "https://t.me/+PlNN48MftZhmMjU9"),
       disable_web_page_preview: true,
     },
   );
